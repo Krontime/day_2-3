@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradiants</title>
+        <style type="text/css">
+            .block{
+                height: 100px;
+                width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: lightblue;
+                border: 2px solid blue;
+                margin-bottom: 60px;
+                text-align: center;
+            }
+            #translation{
+                transform: translate(-200px,100px);
+            }
+            #rotation{
+                transform: rotate(30deg);
+            }
+            #scaled{
+                transform: scale(2,2);
+            }
+            #skewed{
+                transform: skew(30deg);
+            }
+            #threeDX{
+                transform: perspective(700px) rotateX(-45deg);
+            }
+            #threeDY{
+                transform: perspective(700px) rotateY(-45deg);
+            }
+            #threeDZ{
+                transform: perspective(700px) rotateZ(-45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block" id="box">box</div>
+        <div class="block" id="translation">Translation</div>
+        <div class="block" id="rotation">Rotation</div>
+        <div class="block" id="scaled">Scaled</div>
+        <div class="block" id="skewed">Skewed</div>
+        <div class="block" id="threeDX">X-axis</div>
+        <div class="block" id="threeDY">Y-axis</div>
+        <div class="block" id="threeDZ">Z-axis</div>
+        <div class="block" id="front">FRONT</div>
+    </body>
+</html>

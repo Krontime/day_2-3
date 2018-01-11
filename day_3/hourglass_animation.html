@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style type="text/css">
+        
+            .frame{
+                height: 100px;
+                width: 150px;
+                background-color: black;
+                border: 6px solid black;
+                text-align: center;
+                position: absolute;
+                font-size:0;
+                z-index:100;
+            }
+            .sand{
+                height: 100px;
+                width: 150px;
+                background-color: rgb(225, 192, 105);
+                border: 15px solid rgb(225, 192, 105);
+                text-align: center;
+                position: absolute;
+                /*font-size:0;*/
+                z-index: 50;
+            }
+            .background_magic{
+                height: 300px;
+                width: 450px;
+                background-color: white;
+                border: 15px solid white;
+                text-align: center;
+                position: absolute;
+                /*font-size: 0;*/
+                z-index: 25;
+            }
+            
+            #top{
+                width: 400px;
+                height: 25px;
+                top: 500px;
+                left: 250px;
+                /*border-top-left-radius: 30px;*/
+                /*border-top-right-radius: 30px;*/
+            }
+            #left_top_side{
+                width: 25px;
+                top:500px;
+                left:250px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 15px;
+            }
+            #right_top_side{
+                width: 25px;
+                top:500px;
+                left:625px;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 15px;
+            }            
+            #left_top{
+                transform: rotate(-35deg);
+                width: 25px;
+                height: 250px;
+                top: 560px;
+                left: 316px;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            #right_top{
+                transform: rotate(35deg);
+                width: 25px;
+                height: 250px;
+                top: 560px;
+                left: 559px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+            }
+            #left_bottom{
+                transform: rotate(35deg);
+                width: 25px;
+                height: 250px;
+                top: 750px;
+                left: 316px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+            }
+            #right_bottom{
+                transform: rotate(-35deg);
+                width: 25px;
+                height: 250px;
+                top: 750px;
+                left: 559px;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            #left_bottom_side{
+                width: 25px;
+                height: 100px;
+                top: 960px;
+                left: 250px;
+                border-bottom-left-radius: 30px;
+                border-top-left-radius: 15px;
+            }
+            #right_bottom_side{
+                width: 25px;
+                height: 100px;
+                top: 960px;
+                left: 625px;
+                border-bottom-right-radius: 30px;
+                border-top-right-radius: 15px;
+            }
+            #bottom{
+                width: 400px;
+                height: 25px;
+                top: 1035px;
+                left: 250px;
+                /*border-bottom-left-radius: 30px;*/
+                /*border-bottom-right-radius: 30px;*/
+            }
+            
+            #top_sand{
+                width:380px;
+                height: 500px;
+                left: 250px;
+                z-index: 0;
+                /*transform: translate(0px,1027px);*/
+                /*z-index:60;*/
+            }
+            #falling_sand{
+                width: 60px;
+                height: 300px;
+                top: 208px;
+                left: 411px;
+                border-bottom-left-radius: 800px;
+                border-bottom-right-radius: 800px;
+                /*transform: translate(0px,500px);*/
+            }
+            #bottom_sand{
+                width: 260px;
+                height: 260px;
+                top: 1081px;
+                left: 295px;
+                border: 30px solid rgb(225, 192, 105);
+                border-top-left-radius: 50px;
+                transform: rotate(45deg);
+                /*translate(-150px,-150px);*/
+            }
+            
+            #splitter{
+                top:781px;
+                left: 215px;
+                height: 800px;
+            }
+            #left_background_side{
+                width: 340px;
+                top:608px;
+                border-top-right-radius: 100px;
+                transform: rotate(45deg);
+            }
+            #right_backgrond_side{
+                width:340px;
+                top:608px;
+                left: 535px;
+                border-top-left-radius: 100px;
+                transform: rotate(-45deg);
+            }
+            #left_background_bottom{
+                width: 50px;
+                height: 200px;
+                top: 900px;
+                left: 200px;
+                z-index: 60;
+            }
+            #right_backgrond_bottom{
+                width: 50px;
+                height: 200px;
+                top: 900px;
+                left: 630px;
+                z-index: 60;
+            }
+        
+        @-webkit-keyframes top_sand_animation{
+            10%()
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div class="frame" id="left_top">Left Top</div>
+        <div class="frame" id="left_bottom">Left Bottom</div>
+        <div class="frame" id="left_top_side">Left Top Side</div>
+        <div class="frame" id="left_bottom_side">Left Bottom Side</div>
+        <div class="frame" id="right_top">Right Top</div>
+        <div class="frame" id="right_bottom">Right Bottom</div>
+        <div class="frame" id="right_top_side">Right Top Side</div>
+        <div class="frame" id="right_bottom_side">Right Bottom Side</div>
+        <div class="frame" id="top">Top</div>
+        <div class="frame" id="bottom">Bottom</div>
+
+        <div class="sand" id="top_sand">Top</div>
+        <div class="sand" id="falling_sand">Falling</div>
+        <div class="sand" id="bottom_sand">Bottom</div>
+        
+        <div class="background_magic" id="splitter">Splitter</div>
+        <div class="background_magic" id="left_background_side">Left</div>
+        <div class="background_magic" id="right_backgrond_side">Right</div>
+        <div class="background_magic" id="left_background_bottom">Left</div>
+        <div class="background_magic" id="right_backgrond_bottom">Right</div>
+    </body>
+</html>

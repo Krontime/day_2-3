@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style type="text/css">
+            .block{
+                height: 100px;
+                width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: lightblue;
+                border: 2px solid blue;
+                margin-bottom: 60px;
+                text-align: center;
+            }
+        #rotation:hover{
+	        transform:perspective(1000px) rotateY(1000000deg);
+	        background-color: purple;
+	        transition: transform 100s ease-in-out 1s;
+        }
+        #transition{
+            transform: translate(-200px,100px);
+            
+        }
+        </style>
+    </head>
+    <body>
+        <div class="block" id="box">box</div>
+        <div class="block" id="translation">Translation</div>
+        <div class="block" id="rotation">Rotation</div>
+        <div class="block" id="scaled">Scaled</div>
+        <div class="block" id="shake">Shake</div>
+        <div class="block" id="threeDX">X-axis</div>
+        <div class="block" id="threeDY">Y-axis</div>
+        <div class="block" id="threeDZ">Z-axis</div>
+    </body>
+</html>
