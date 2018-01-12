@@ -1,0 +1,69 @@
+<!--! with tab will auto add mobile information!!!-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Navigation</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" type="text/css" href="../day_4/CSS/reset.css">
+        <style type="text/css">
+            
+            body {
+                background-color: #292E37;
+            }
+            
+            nav ul {
+                text-align: center;
+            }
+            
+            nav ul li {
+                font-size: 30px;
+                border-bottom: 1px solid #444;
+                padding: 10px 5px;
+                background-color: #1D2026;
+            }
+            
+            nav ul li a:visited {
+                color: #fff;
+            }
+            
+            nav ul li:hover {
+                background-color: #555;
+                transition: background-color .3s ease;
+            }
+            
+            nav ul li a {
+                display: block;
+                text-decoration: none;
+                font-family: roboto;
+                color: rgba(150,150,150,1);
+            }
+            
+            nav{
+                    font-size: 0;
+                }
+            
+            @media screen and (min-width: 665px) {
+                nav ul li {
+                    display: inline-block;
+                    width: 120px;
+                    font-size: 20px;
+                    border-bottom: none;
+                }
+            }    
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
