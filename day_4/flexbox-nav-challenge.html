@@ -8,27 +8,47 @@
 		<style type="text/css">
 		nav{
 			font-family: roboto;
-			margin: 30px auto;
-			width: 97%;
+			width: 100%;
 			display: flex;
 			flex-direction: column;
-			align-items:stretch;
+			align-items: center;
 			list-style-type: none;
 			padding: 0;	
 			background-color: orange;
+			box-sizing: border-box;
+			border-bottom: 1px solid;
 		}
 		a{
 			text-decoration: none;
 			color: black;
 			flex:1;
 			height: 30px;
+			width: 60%;
 			font-family: Dosis;
 			padding:20px 20px 20px 20px;
 			text-align: center;
-			font-size: 0.5em;
-			border:1px solid black;
+			font-size: 0.8em;
 			display: flex;
-			flex-direction: row;
+			justify-content: center;;
+		}
+		p{
+			font-family: Dosis;
+			font-size: 1.5em;
+			text-align: left;
+			text-decoration: underline;
+		}
+		div img{
+			width: 70%;
+			display: flex;
+			max-width: 500px;
+			max-height: 500px;
+			flex-flow: row center;
+		}
+		
+		#starting_text{
+			display: flex;
+			text-decoration: none;
+			font-size: 1em;
 		}
 		#logoNav{
 			font-size: 2em;
@@ -38,7 +58,11 @@
 		#red_text{
 			color: red;
 		}
+		#laptop_picture{
+			
+		}
 		
+
 		.cards {
 			width: 100%;
 			background-color: orange;
@@ -70,10 +94,9 @@
 		
 		@media screen and (min-width: 700px){
 			nav{
-				width: 90%;
+				width: 100%;
 				flex-flow: row;
 				align-items:baseline;
-				
 			}
 			a{
 				border: none;
@@ -84,7 +107,6 @@
 			#logoNav{
 				flex: 5;
 				text-align: left;
-				
 			}
 		}
 		</style>
@@ -99,15 +121,18 @@
 				<a href="https://www.pexels.com/">Photos</a>
 		</nav>
 		<div class="cards">
-			<img src="../day_4/Media/images/laptop.png" alt="cartoon_laptop_logo">
+			<p>DIL SE ... WITH LOVE</p>
+			<img id="laptop_picture" src="../day_4/Media/images/laptop.png" alt="cartoon_laptop_logo">
+			<p id="starting_text">Dilse.IT brings you a CTO In-A-Box!</p>
 		</div>
+		<div class="cards">
 		<div>
 			<div class="card">
-			<img src="../day_4/Media/images/graphic1.png" alt="keyboard_graphic">
-			<h2>Web Info Sessions</h2>
-			<p>If you have questions about your career, then why not join one of our open evenings.</p>
+				<img src="../day_4/Media/images/graphic1.png" alt="keyboard_graphic">
+				<h2>Web Info Sessions</h2>
+				<p>If you have questions about your career, then why not join one of our open evenings.</p>
 			</div>
-				
+		</div>		
 		</div>
 </body>
 </html>
